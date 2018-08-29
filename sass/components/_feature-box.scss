@@ -1,0 +1,25 @@
+.row-features{
+  padding-top: 10rem;
+}
+.feature-box{
+  background-color: rgba($color-white, .8);
+  font-size: 1rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  transition: all .2s;
+
+  &__icon{
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text; /*nada textowi backgrd z gradientem, jesli sam bedzie transparentny*/
+    color: transparent;
+  }
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.01);
+  }
+}
