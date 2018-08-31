@@ -9,7 +9,7 @@
     position: relative;
   }
   &:hover {
-    color: $color-primary;
+
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba($color-black, .2);
     &::after {
@@ -30,6 +30,15 @@
       background-color: $color-white;
     }
   }
+
+  &-green {
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &::after {
     content: ""; /*necessary for after + display!!!!*/
     display: inline-block;
