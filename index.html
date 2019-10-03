@@ -1,210 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/icon-font.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">    
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <title>Natours | Exciting tours for adventurous people</title>
+    <script src="https://kit.fontawesome.com/c4010f0241.js" crossorigin="anonymous"></script>
+
+    <title>BCweb</title>
 </head>
-<body>
-    <header class="header">
+<body>    
+
+  <main class="App">
+    <span id='appBckg'></span>
+    <header class="App-header">
+      <div class="App-header_nav">
         <div class="logo-box">
-            <img src="img/logo-white.png" alt="Logo" class="logo">
+            <img src="img/logo_white.svg" alt="Logo" class="logo">
         </div>
-        <div class="text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary-main">OUTDOORS</span>
-                <span class="heading-primary-sub">is where life happens</span>
-
-            </h1>
-            <a href="#" class="btn btn-white btn-animated">Discover our tours</a>
+        <div class="nav-content">
+          <input type="text" class="search" id='search' autocomplete="off">
+          <i class="fas fa-search" id='searchIcon'></i>
+                      
+          <nav class="navigation"  id="menuToggle">
+              <input type="checkbox" id="openMenu"/>
+              <div class="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>                                                    
+          </nav>
         </div>
+      </div>          
+      <div class="App-header_title">
+        <h1>Strony www i sklepy internetowe.</h1>
+        <p>Powstaliśmy, aby swoją pracą ustalać nowe standarty i rewolucjonizować
+        branżę.</p>
+        <p>Reazlicujemy swoje plany i marzenia, tworząc strony www i sklepy interentowe.</p>
+      </div>   
+      <div class="menuOpen">
+        <ul id="menu">
+          <li data-content='main'>Strona główna</li>
+          <li data-content='about'>O nas</li>
+          <li data-content='offer'>Oferta <i class="fas fa-plus-square"></i></li>
+          <li data-content='works'>Realizacje</li>
+          <li data-content='articles'>Artykuły <i class="fas fa-plus-square"></i></li>
+          <li data-content='contact'>Kontakt <i class="fas fa-plus-square"></i></li>               
+        </ul>
+        <div class="container">
+          <section class="offer" id="offer">
+            <h1>Oferta</h1>
+            <div class="box">
+              <div class="offer_item">
+                <p>Strony internetowe</p>
+              </div>
+              <div class="offer_item">
+                <p>Sklepy interentowe</p>
+              </div>
+              <div class="offer_item">
+                <p>Projektowanie graficzne</p>
+              </div>
+              <div class="offer_item">
+                <p>Druk materiałow reklamowych</p>
+              </div>
+              <div class="offer_item">
+                <p>Prezentacje i animacje 2D</p>
+              </div>
+              <div class="offer_item">
+                <p>Copywriting</p>
+              </div>
+            </div>
+          </section> 
+          <section class="about">
+              <h1>O nas</h1>
+              <div class="box">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, adipisci animi facilis modi reprehenderit quos labore repellendus iusto ducimus perspiciatis amet. Dolore iure, molestiae nostrum corrupti veniam optio beatae quos?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cum ratione reiciendis commodi eveniet animi perferendis, rerum molestiae non, harum iste quam impedit consequatur, aspernatur delectus molestias unde aliquid autem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cum ratione reiciendis commodi eveniet animi perferendis, rerum molestiae non, harum iste quam impedit consequatur, aspernatur delectus molestias unde aliquid autem!</p>
+              </div>
+          </section>
+          <section class="works"></section>
+          <section class="articles"></section>
+          <section class="contact"></section>
+        </div>    
+      </div>
+      
+       
     </header>
-    <main>
-        <section class="section-about">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    Exciting tours for adventurous people
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
-                    <p class="paragraph">
-                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda corporis cupiditate deserunt,
-                        dolore dolorem error est facilis hic inventore, ipsa labore maxime,
-                        nobis nostrum repellat tempora tenetur veniam voluptate!
-                    </p>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
-                    <p class="paragraph" >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aperiam, ipsum sapiente aspernatur libero repellat quis
-                        consequatur ducimus quam nisi exercitationem omnis earum qui.
-                    </p>
-                    <a href="#" class="btn-text">Learn more &rarr;</a>
-                </div>
-                <div class="col-1-of-2">
-                    <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="Photo2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo3" class="composition__photo composition__photo--p3">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-features">
-            <div class="row row-features">
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon icon-basic-world"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloremque non sed veniam.</p>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon icon-basic-compass"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloremque non sed veniam.</p>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon icon-basic-map"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloremque non sed veniam.</p>
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon icon-basic-heart"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Life a healthier life</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloremque non sed veniam.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-tours">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    Most popular tours
-                </h2>
-            </div>
-            <div class="row row-tours">
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--1">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--1">
-                                    The sea explorer
-                                </span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>3 day tours</li>
-                                    <li>Up to 30 people</li>
-                                    <li>2 tour guides</li>
-                                    <li>Sleep in cozy hotels</li>
-                                    <li>Difficulty: easy</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card__side card__side--back card__side--back-1">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">Only</p>
-                                    <p class="card__price-value">$267</p>
-                                </div>
-                                <a href="#" class="btn btn-white">Book now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--2">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--2">
-                                    The forest hiker
-                                </span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>7 day tours</li>
-                                    <li>Up to 40 people</li>
-                                    <li>6 tour guides</li>
-                                    <li>Sleep in provided tents</li>
-                                    <li>Difficulty: medium</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card__side card__side--back card__side--back-2">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">Only</p>
-                                    <p class="card__price-value">$467</p>
-                                </div>
-                                <a href="#" class="btn btn-white">Book now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">
-                                    The snow adventurer</span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>5 day tours</li>
-                                    <li>Up to 15 people</li>
-                                    <li>3 tour guides</li>
-                                    <li>Sleep in provided tents</li>
-                                    <li>Difficulty: hard</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card__side card__side--back card__side--back-3">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">Only</p>
-                                    <p class="card__price-value">$867</p>
-                                </div>
-                                <a href="#" class="btn btn-white">Book now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn btn-green">Discover all tours</a>
-            </div>
+    
+  </main>
 
-        </section>
-    </main>
-
-
+    <script src="js/main.js"></script>
 </body>
+
 </html>
